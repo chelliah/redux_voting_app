@@ -1,6 +1,6 @@
 import React from 'react/addons';
 import {List, Map} from 'immutable';
-import Results from '../../app/src/components/Results';
+import {Results} from '../../app/src/components/Results';
 import {expect} from 'chai';
 
 const {renderIntoDocument, scryRenderedDOMComponentsWithClass} = React.addons.TestUtils;

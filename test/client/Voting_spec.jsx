@@ -1,6 +1,6 @@
 import React from 'react/addons';
 import ReactDOM from 'react/addons';
-import Voting from '../../app/src/components/Voting';
+import {Voting} from '../../app/src/components/Voting';
 //import Vote from '../../app/src/components/Vote';
 import {List} from 'immutable'
 import {expect} from 'chai';
