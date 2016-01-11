@@ -6,11 +6,10 @@
   "scripts": {
     "test": "mocha ./test/*/** --compilers js:babel-core/register --require ./test/*/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch",
-    "start": "babel-node api/src/index.js",
+    "start": "babel-node api/index.js",
     "start-watch": "",
     "wp-server": "webpack-dev-server",
     "dev": "npm run start | npm run wp-server"
-
   },
   "author": "aron thomas",
   "license": "ISC",
@@ -44,6 +43,6 @@
     "react-router": "^1.0.0-rc3",
     "redux": "^3.0.5",
     "socket.io": "^1.3.7",
-    "socket.io-client": "^1.4.3"
+    "socket.io-client": "^1.3.7"
   }
 }

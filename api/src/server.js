@@ -1,6 +1,6 @@
 import Server from 'socket.io';
 
-export default function startserver(store){
+export function startServer(store){
     const io = new Server().attach(5000);
 
     store.subscribe(
