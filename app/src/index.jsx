@@ -20,7 +20,10 @@ store.dispatch({
     }
 });
 
-const socket = io("${location.protocol}//${location.hostname}:8090");
+const socket = io('${location.protocol}//${location.hostname}:5000');
+socket.on('state', ()=>{
+    store.dispatch({type: 'SET_STATE', state});
+});
 
 const routes = <Route component={App}>
     <Route path="/results" component={Results} />
